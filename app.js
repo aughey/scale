@@ -1,5 +1,11 @@
 $(function() {
-  var synth = new Tone.Synth().toMaster()
+  var synth = new Tone.Synth({
+    envelope: {
+      attack : 0.01,
+      decay : 100,
+      sustain: 1
+    }
+  }).toMaster()
 
   var piano = new Tone.Synth({
     "oscillator": {
