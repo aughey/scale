@@ -110,10 +110,10 @@ $(function() {
       //the order of the notes passed in depends on the pattern
       synth.triggerAttackRelease(note, "1n", time);
     }, scale(first_note,scalecount), "upDown").start(0);
-    pattern.interval = "2n";
+    pattern.interval = "1n";
 
-    $('#key').html(first_note);
-    $('#count').html(scalecount)
+    $('#key').html("First note: " + first_note);
+    $('#count').html("Octaves: " + scalecount)
   }
 
   $('button').click(stop)
