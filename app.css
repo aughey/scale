@@ -1,0 +1,17 @@
+.metronome {
+width: 80%;
+height: 80%;
+font-size: 100pt;
+vertical-align: center;
+text-align: center;
+}
+
+.metronomeon {
+  background:black;
+  color:white;
+}
+
+.metronomeoff {
+  background:white;
+  color:black;
+}
