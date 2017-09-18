@@ -122,7 +122,20 @@ $(function() {
     $('#count').html("Octaves: " + scalecount)
   }
 
-  $('button').click(stop)
+  $('#keyup').click(function() {
+    incr(1,0);
+  })
+  $('#keydown').click(function() {
+    incr(-1,0);
+  })
+  $('#countup').click(function() {
+    incr(0,1);
+  })
+  $('#countdown').click(function() {
+    incr(0,1);
+  })
+
+  $('#stop').click(stop)
   $('.metronome').click(stop)
   $('body').keydown(function(e) {
     if (e.keyCode == 32) { // space

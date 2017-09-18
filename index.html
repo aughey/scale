@@ -4,12 +4,12 @@
 </head>
 <body>
 <div id="content">
-  <button>Stop</button>
+  <button id='stop'>Stop</button>
   <div>
     Use left and right arrow keys to change first note.  Use up and down arrow keys to change number of octaves.
     </div>
-  <div id='key'></div>
-  <div id='count'></div>
+  <div><button id="keydown">Down</button><span id='key'></span><button id="keyup">Up</button></div>
+  <div><button id="countdown">Down</button><span id='count'></span><button id="countup">Up</button></div>
   <div class="metronome"></div>
 </div>
 <script src="tone.js"></script>
