@@ -1,15 +1,36 @@
 <html>
 <head>
+ <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
 <div id="content">
   <button id='stop'>Stop</button>
   <div>
-    Use left and right arrow keys to change first note.  Use up and down arrow keys to change number of octaves.
+    Use left and right arrow keys to change first note.  Use up and down arrow keys to change the note value.
     </div>
-  <div><button id="keydown">Down</button><span id='key'></span><button id="keyup">Up</button></div>
-  <div><button id="countdown">Down</button><span id='count'></span><button id="countup">Up</button></div>
+    Pattern Type: <select id='pattern'>
+      <option>Scale</option>
+      <option selected>Interval</option>
+    </select>
+    Repeated Note: <select id='repeatednote'>
+      <option selected>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select>
+  <div><button id="keydown">Down</button>Key: <span id='key'></span><button id="keyup">Up</button></div>
+  <div><button id="countdown">Down</button>Octaves: <span id='count'></span><button id="countup">Up</button></div>
+  <div><button id="intervaldown">Down</button>Interval: <span id='interval'></span><button id="intervalup">Up</button></div>
+  <div>
+  <img id='scale'>
+  </div>
   <div class="metronome"></div>
 </div>
 <script src="tone.js"></script>
